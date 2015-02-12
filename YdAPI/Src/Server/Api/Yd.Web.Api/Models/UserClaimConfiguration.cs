@@ -8,8 +8,6 @@ namespace Yd.Web.Api.Models
         {
             HasKey(o => o.Id);
 
-        
-
             Property(o => o.Id)
                 .HasMaxLength(128); 
         }

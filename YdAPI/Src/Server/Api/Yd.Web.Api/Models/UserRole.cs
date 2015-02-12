@@ -2,5 +2,7 @@
 {
     public class UserRole
     {
+        public string UserId { get; set; }
+        public virtual User User { get; set; }
     }
 }
