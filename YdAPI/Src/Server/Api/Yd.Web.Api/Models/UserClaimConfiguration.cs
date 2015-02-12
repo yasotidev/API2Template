@@ -1,14 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data.Entity.ModelConfiguration;
-using System.Linq;
-using System.Web;
+﻿using System.Data.Entity.ModelConfiguration;
 
 namespace Yd.Web.Api.Models
 {
-    public class UserClaimConfiguration  : EntityTypeConfiguration<UserClaim>
+    public class UserLClaimConfiguration  : EntityTypeConfiguration<UserClaim>
     {
-        public UserClaimConfiguration()
+        public UserLClaimConfiguration()
         {
             HasKey(o => o.Id);
 
