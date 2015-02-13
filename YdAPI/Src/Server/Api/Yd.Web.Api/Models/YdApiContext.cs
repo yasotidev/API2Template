@@ -30,7 +30,7 @@ namespace Yd.Web.Api.Models
             modelBuilder.Configurations.Add(new UserLoginConfiguration());
             modelBuilder.Configurations.Add(new UserClaimConfiguration());
             modelBuilder.Configurations.Add(new UserGroupConfiguration());
-
+            modelBuilder.Configurations.Add(new GroupConfiguration());
             modelBuilder.Configurations.Add(new RoleConfiguration());
          
             base.OnModelCreating(modelBuilder);
