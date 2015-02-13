@@ -1,4 +1,7 @@
-﻿namespace Yd.Web.Api.Models
+﻿using System.Collections.Generic;
+using System.Diagnostics;
+
+namespace Yd.Web.Api.Models
 {
     public class User
     {
@@ -7,5 +10,7 @@
         public string PasswordHash { get; set; }
         public string SecurityStamp { get; set; }
         public bool TwoFactorEnabled { get; set; }
+
+        public virtual ICollection<UserGroup> UserGroups { get; set; }
     }
 }

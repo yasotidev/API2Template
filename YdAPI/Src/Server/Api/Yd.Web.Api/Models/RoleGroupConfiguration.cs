@@ -10,9 +10,10 @@ namespace Yd.Web.Api.Models
     {
         public RoleGroupConfiguration()
         {
-            HasKey(o => new {o.RoleId, o.GroupId});
-
+            HasKey(o => new {o.RoleId, o.GroupId});   
+            
             Property(o => o.GroupId);
+
             Property(o => o.RoleId);
 
         }

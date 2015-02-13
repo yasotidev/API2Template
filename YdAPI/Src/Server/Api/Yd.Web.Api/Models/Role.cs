@@ -1,4 +1,5 @@
-﻿using System.Data.Entity.Spatial;
+﻿using System.Collections.Generic;
+using System.Data.Entity.Spatial;
 
 namespace Yd.Web.Api.Models
 {
@@ -6,5 +7,6 @@ namespace Yd.Web.Api.Models
     {
         public string Id { get; set; }
         public string Name { get; set; }
+        public string Description { get; set; }  
     }
 }
