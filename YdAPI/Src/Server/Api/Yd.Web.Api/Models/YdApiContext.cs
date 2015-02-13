@@ -26,8 +26,13 @@ namespace Yd.Web.Api.Models
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
 
             modelBuilder.Configurations.Add(new UserConfiguration());
-            modelBuilder.Configurations.Add(new RoleConfiguration());
+            modelBuilder.Configurations.Add(new UserRoleConfiguration());         
+            modelBuilder.Configurations.Add(new UserLoginConfiguration());
+            modelBuilder.Configurations.Add(new UserClaimConfiguration());
+            modelBuilder.Configurations.Add(new UserGroupConfiguration());
 
+            modelBuilder.Configurations.Add(new RoleConfiguration());
+         
             base.OnModelCreating(modelBuilder);
         }
     }

@@ -6,15 +6,11 @@ using System.Web;
 
 namespace Yd.Web.Api.Models
 {
-    public class UserRoleConfiguration   : EntityTypeConfiguration<UserRole>
+    public class RoleGroupConfiguration   : EntityTypeConfiguration<RoleGroup>
     {
-        public UserRoleConfiguration()
+        public RoleGroupConfiguration()
         {
-            HasKey(o => new { o.UserId, o.RoleId});
-
-         
+            
         }
-
-           
     }
 }

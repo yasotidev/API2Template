@@ -2,9 +2,9 @@
 
 namespace Yd.Web.Api.Models
 {
-    public class UserLClaimConfiguration  : EntityTypeConfiguration<UserClaim>
+    public class UserClaimConfiguration  : EntityTypeConfiguration<UserClaim>
     {
-        public UserLClaimConfiguration()
+        public UserClaimConfiguration()
         {
             HasKey(o => o.Id);
 
